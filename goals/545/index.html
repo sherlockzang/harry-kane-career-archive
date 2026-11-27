@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="description" content="An independent bilingual archive of Harry Kane’s senior career, with sourced match records, goals, seasons and analysis.">
+    <meta name="theme-color" content="#F5F6F8" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#0A0E14" media="(prefers-color-scheme: dark)">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/harry-kane-career-archive/assets/ibm-plex-sans-condensed-latin-600-normal-CRd5VyFf.woff2">
+    <link rel="preload" as="font" type="font/woff2" crossorigin href="/harry-kane-career-archive/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2">
+    <link rel="icon" type="image/svg+xml" href="/harry-kane-career-archive/favicon.svg">
+    <title>Harry Kane Career Archive</title>
+    <script>
+      try {
+        const params = new URLSearchParams(location.search);
+        const locale = params.get('lang') || localStorage.getItem('ka-locale');
+        document.documentElement.lang = locale === 'en-GB' ? 'en-GB' : (locale === 'zh-TW' || locale === 'zh-Hant' || locale === 'zh-HK') ? 'zh-TW' : 'zh-CN';
+        const theme = localStorage.getItem('ka-theme');
+        document.documentElement.dataset.theme = theme === 'light' || theme === 'dark' ? theme :
+          matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      } catch {}
+    </script>
+    <script type="module" crossorigin src="/harry-kane-career-archive/assets/index-lHJdAcWy.js"></script>
+    <link rel="modulepreload" crossorigin href="/harry-kane-career-archive/assets/vendor-CLVR-o4q.js">
+    <link rel="modulepreload" crossorigin href="/harry-kane-career-archive/assets/archive-data-VpUNB6rI.js">
+    <link rel="stylesheet" crossorigin href="/harry-kane-career-archive/assets/vendor-shPpeWHj.css">
+    <link rel="stylesheet" crossorigin href="/harry-kane-career-archive/assets/index-DUbhJ0y3.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

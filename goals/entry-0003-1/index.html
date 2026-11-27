@@ -1,28 +1,5 @@
 <!doctype html>
-<html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-    <meta name="description" content="An independent bilingual archive of Harry Kane’s senior career, with sourced match records, goals, seasons and analysis.">
-    <meta name="theme-color" content="#F6F4EF">
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/harry-kane-career-archive/assets/newsreader-latin-standard-normal-s-izfB6B.woff2">
-    <link rel="preload" as="font" type="font/woff2" crossorigin href="/harry-kane-career-archive/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2">
-    <link rel="icon" type="image/svg+xml" href="/harry-kane-career-archive/favicon.svg">
-    <title>Harry Kane Career Archive</title>
-    <script>
-      try {
-        const params = new URLSearchParams(location.search);
-        const locale = params.get('lang') || localStorage.getItem('ka-locale');
-        document.documentElement.lang = locale === 'en-GB' ? 'en-GB' : 'zh-CN';
-        const theme = localStorage.getItem('ka-theme');
-        document.documentElement.dataset.theme = theme === 'light' || theme === 'dark' ? theme :
-          matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
-      } catch {}
-    </script>
-    <script type="module" crossorigin src="/harry-kane-career-archive/assets/index-DLdTl-rf.js"></script>
-    <link rel="stylesheet" crossorigin href="/harry-kane-career-archive/assets/index-6rHVBo_d.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<html lang="en"><meta charset="utf-8"><title>Goal archive</title>
+<script>location.replace("/harry-kane-career-archive/goals/19/" + location.search + location.hash)</script>
+<p><a href="/harry-kane-career-archive/goals/19/">Open the numbered goal record</a></p>
 </html>
